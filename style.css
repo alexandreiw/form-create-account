@@ -1,0 +1,134 @@
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(250, 66%, 75%);
+  --body-color: hsl(218, 10%, 16%);
+  --background-gradient: linear-gradient(90deg, hsl(250, 66%, 65%) 0%, hsl(250, 66%, 75%) 100%);
+  --box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100%;
+  width: 25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.header {
+  padding: 1.25rem;
+  background: var(--background-gradient);
+}
+
+.header h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 1.25rem;
+  background: hsl(218, 10%, 20%);
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--first-color);
+}
+
+.form__control {
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.form__control label {
+  color: hsl(0, 0%, 95%);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.form__control input {
+  display: block;
+  width: 100%;
+  color: var(--first-color);
+  font-size: 14px;
+  padding: 0.7rem;
+  margin-bottom: 10px;
+  border: 2px solid var(--body-color);
+  outline: none;
+  background: var(--body-color);
+  transition: all 0.3s;
+}
+
+.form__control i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.form__control small {
+  position: absolute;
+  bottom: 0;
+  left: 0.6rem;
+  opacity: 0;
+}
+
+.form button {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  background: var(--background-gradient);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* success and error */
+.form__control.success input {
+  border-color: #2ecc71;
+}
+
+.form__control.success i.uis-check-circle {
+  opacity: 1;
+  color: #2ecc71;
+}
+
+.form__control.error input {
+  border-color: #e74c3c;
+}
+
+.form__control.error i.uis-exclamation-triangle {
+  opacity: 1;
+  color: #e74c3c;
+}
+
+.form__control.error small {
+  opacity: 1;
+  color: #e74c3c;
+}

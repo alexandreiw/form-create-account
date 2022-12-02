@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== ICONSCOUT ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
+    <!--=============== GOOGLEFONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Criar conta</h2>
+      </div>
+      <form action="" id="form" class="form">
+        <div class="form__control">
+          <label for="userName">Nome de usuário</label>
+          <input type="text" id="userName" placeholder="Digite o nome de usuário" />
+          <i class="uis uis-exclamation-triangle"></i>
+          <i class="uis uis-check-circle"></i>
+          <small>message</small>
+        </div>
+
+        <div class="form__control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite o e-mail" />
+          <i class="uis uis-exclamation-triangle"></i>
+          <i class="uis uis-check-circle"></i>
+          <small>message</small>
+        </div>
+
+        <div class="form__control">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite a senha" />
+          <i class="uis uis-exclamation-triangle"></i>
+          <i class="uis uis-check-circle"></i>
+          <small>message</small>
+        </div>
+
+        <div class="form__control">
+          <label for="passwordConfirmation">Confirmação de senha</label>
+          <input type="password" id="passwordConfirmation" placeholder="Confirme a senha" />
+          <i class="uis uis-exclamation-triangle"></i>
+          <i class="uis uis-check-circle"></i>
+          <small>message</small>
+        </div>
+
+        <button type="submit">CRIAR CONTA</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
